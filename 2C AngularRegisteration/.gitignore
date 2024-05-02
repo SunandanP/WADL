@@ -1,0 +1,5 @@
+# Packages downloaded by package manager
+node_modules/
+
+# Build artifacts
+dist/

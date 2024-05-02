@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" (click)="onExit()">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" *ngIf="!found && init">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" #email>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleFormControlTextarea1" rows="3" #password>
+  </div>
+  <button class="btn btn-primary" (click)="checkUser(email.value, password.value)">Login</button>
+</div>
+
+<div class="container" *ngIf="found && !init">
+  <div class="alert alert-success my-3" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>You've successfully logged in your account!</p>
+    <hr>
+    <p class="mb-0">Good, now take this time to remember the credentials well.</p>
+  </div>
+  </div>
+
+  <div class="container" *ngIf="!found && !init">
+    <div class="alert alert-danger my-3" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Account Logging in failed, Invalid Credentials.</p>
+      <hr>
+      <p class="mb-0">Check your email and passowrd, and try again.</p>
+    </div>
+    </div>
