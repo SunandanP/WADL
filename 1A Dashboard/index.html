@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dashboard Application</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Preferences</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Advanced
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Details for last year</a></li>
+                  <li><a class="dropdown-item" href="#">Summary</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-success mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+            </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Profile Management Page</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Account Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile Picture</a>
+              </li>
+              <li class="nav-item dropdown">  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Notifications</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Email</a></li>
+                  <li><a class="dropdown-item" href="#">In-app</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Display Preferences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Connected Accounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscriptions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Security Settings</a>
+              </li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+      <div class="container my-3">
+      <div class="card">
+        <div class="card-header">
+          Just for you 👀
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Get a little more than what you deserve...</h5>
+          <p class="card-text">Get the premium edition of dashboard application at just ₹139.90</p>
+          <a href="#" class="btn btn-primary">Let's go, get some!</a>
+        </div>
+        </div>
+        <div class="row my-3 container">
+            <div class="card text-bg-primary mb-3 mx-2" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-bg-secondary mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-bg-success mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div class="card text-bg-danger mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Danger card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+      </div>
+        </div>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1585087907450-P1KFP117MZ482U21XP75/produce_categoricall.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">
+                            Explore different metrics to analyse your data and make the decision making process simpler!</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="221122_HealthySickSick-Treatment-12_Average-Daily-Number-of-Seizures_Science-Simplified_Line-graph.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Explore different metrics to analyse your data and make the decision making process simpler!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh6.googleusercontent.com/-cCcKhbfuEBFAfX7zZtTyvvtXeMrV_upJLEY59y85mKRTqBCA7Vt8Hv1kw5m52iQXRNCqJJy6hn_TepMb_WrhwQBCIubZB3GlyOVsP5vwijBJnPOYHVFGCUTqNf3UHEFbkZcn_9W" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Explore different metrics to analyse your data and make the decision making process simpler!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.stack.imgur.com/di2sp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Explore different metrics to analyse your data and make the decision making process simpler!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    </body>
+</html>
